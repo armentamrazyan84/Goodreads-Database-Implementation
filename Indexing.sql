@@ -1,0 +1,18 @@
+CREATE INDEX idx_reviews_book_id ON Reviews(book_id);
+CREATE INDEX idx_ratings_book_id ON Ratings(book_id);
+CREATE INDEX idx_bookshelfbooks_book_id ON BookshelfBooks(book_id);
+CREATE INDEX idx_quotes_user_id ON Quotes(user_id);
+CREATE INDEX idx_quotes_book_id ON Quotes(book_id);
+CREATE INDEX idx_bookshelves_user_id ON Bookshelves(user_id);
+CREATE INDEX idx_challengeparticipation_challenge_id ON ChallengeParticipation(challenge_id);
+CREATE INDEX idx_giveawaywins_giveaway_id ON GiveawayWins(giveaway_id);
+CREATE INDEX idx_friendships_user2 ON Friendships(user_id2);
+CREATE INDEX idx_recommendations_book_id ON BookRecommendations(book_id);
+CREATE INDEX idx_books_author_id ON Books(author_id);
+CREATE INDEX idx_books_series_id ON Books(series_id);
+CREATE INDEX idx_bookgenres_genre_id ON BookGenres(genre_id);
+CREATE INDEX idx_editions_book_id ON Editions(book_id);
+CREATE INDEX idx_books_author_title ON Books(author_id, title);
+CREATE INDEX idx_giveaways_cost ON Giveaways(cost_in_points);
+CREATE INDEX idx_bookrecommendations_user_book ON BookRecommendations(user_id, book_id);
+CREATE INDEX idx_editions_publisher_book ON Editions(publisher_id, book_id);
